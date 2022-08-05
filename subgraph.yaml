@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: TransitOld
-    network: moonbeam
+    network: arbitrum-one
     source:
       abi: TransitOld
-      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
-      startBlock: 920793
+      address: "0x80593a336e3dba6ae7d6195bf99da86ed50135d9"
+      startBlock: 253911
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -19,28 +19,6 @@ dataSources:
         - name: TransitOld
           file: ./abis/TransitOld.json
       eventHandlers:
-        - event: SwapChannel(indexed address,indexed address,indexed
-            address,string,uint256,uint256,uint256)
-          handler: handleSwapChannel
+        - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleSwap
       file: ./src/transit-old.ts
-  - kind: ethereum
-    name: Transit
-    network: moonbeam
-    source:
-      abi: TransitOld
-      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
-      startBlock: 920793
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.6
-      language: wasm/assemblyscript
-      entities:
-        - Order
-      abis:
-        - name: TransitOld
-          file: ./abis/TransitOld.json
-      eventHandlers:
-        - event: SwapChannel(indexed address,indexed address,indexed
-            address,string,uint256,uint256,uint256)
-          handler: handleSwapChannel
-      file: ./src/transit.ts
