@@ -4,7 +4,13 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
+    "build:matic": "graph build --network matic",
+    "build:bsc": "graph build --network bsc",
+    "build:ftm": "graph build --network ftm",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ chendatony31/transit-swap",
+    "deploy:matic": "graph deploy --network matic --node https://api.thegraph.com/deploy/ chendatony31/transit-swap-polygon",
+    "deploy:ftm": "graph deploy --network ftm --node https://api.thegraph.com/deploy/ chendatony31/transit-swap-ftm",
+    "deploy:bsc": "graph deploy --network bsc --node https://api.thegraph.com/deploy/ chendatony31/transit-swap-bsc",
     "create-local": "graph create --node http://localhost:8020/ chendatony31/transit-swap",
     "remove-local": "graph remove --node http://localhost:8020/ chendatony31/transit-swap",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 chendatony31/transit-swap",
@@ -14,5 +20,7 @@
     "@graphprotocol/graph-cli": "0.33.0",
     "@graphprotocol/graph-ts": "0.27.0"
   },
-  "devDependencies": { "matchstick-as": "0.5.0" }
+  "devDependencies": {
+    "matchstick-as": "0.5.0"
+  }
 }
