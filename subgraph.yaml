@@ -1,4 +1,4 @@
-specVersion: 0.0.1
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
@@ -6,33 +6,41 @@ dataSources:
     name: TransitOld
     network: fantom
     source:
-      address: "0x7d04aedc19aaeed47ccd1f27834d4e831861c838"
       abi: TransitOld
+      address: "0x7d04aedc19aaeed47ccd1f27834d4e831861c838"
+      startBlock: 19743723
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.5
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
-        - CrossSwap
-        - OriginSwap
-        - OwnershipTransferPrepared
-        - OwnershipTransferred
-        - Swap
-        - SwapChannel
+        - Order
       abis:
         - name: TransitOld
           file: ./abis/TransitOld.json
       eventHandlers:
-        - event: CrossSwap(indexed address,indexed address,indexed address,uint256,uint256,uint256)
-          handler: handleCrossSwap
-        - event: OriginSwap(indexed address,indexed address,indexed address,uint256,uint256,uint256)
-          handler: handleOriginSwap
-        - event: OwnershipTransferPrepared(indexed address,indexed address)
-          handler: handleOwnershipTransferPrepared
-        - event: OwnershipTransferred(indexed address,indexed address)
-          handler: handleOwnershipTransferred
-        - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
-          handler: handleSwap
-        - event: SwapChannel(indexed address,indexed address,indexed address,string,uint256,uint256,uint256)
+        - event: SwapChannel(indexed address,indexed address,indexed
+            address,string,uint256,uint256,uint256)
           handler: handleSwapChannel
       file: ./src/transit-old.ts
+  - kind: ethereum
+    name: Transit
+    network: fantom
+    source:
+      abi: TransitOld
+      address: "0x01C892c7b9fb9B1ACd3584be12EFFf91278d5230"
+      startBlock: 23086457
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Order
+      abis:
+        - name: TransitOld
+          file: ./abis/TransitOld.json
+      eventHandlers:
+        - event: SwapChannel(indexed address,indexed address,indexed
+            address,string,uint256,uint256,uint256)
+          handler: handleSwapChannel
+      file: ./src/transit.ts

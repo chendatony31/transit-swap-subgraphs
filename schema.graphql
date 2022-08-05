@@ -1,6 +1,13 @@
-type ExampleEntity @entity {
+type Order @entity {
   id: ID!
-  count: BigInt!
+  blockNumber: BigInt!
+  from: Bytes! # address
+  trader: Bytes! # address
   token0: Bytes! # address
   token1: Bytes! # address
+  channel: String! # string
+  amount: BigInt! # uint256
+  fees: BigInt! # uint256
+  toChainID: BigInt! # uint256
+  isOld: Boolean! # boolean
 }

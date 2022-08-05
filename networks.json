@@ -1,7 +1,12 @@
 {
   "fantom": {
     "TransitOld": {
-      "address": "0x7d04aedc19aaeed47ccd1f27834d4e831861c838"
+      "address": "0x7d04aedc19aaeed47ccd1f27834d4e831861c838",
+      "startBlock": 19743723
+    },
+    "Transit": {
+      "address": "0x01C892c7b9fb9B1ACd3584be12EFFf91278d5230",
+      "startBlock": 23086457
     }
   }
 }
