@@ -1,0 +1,38 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: TransitOld
+    network: fantom
+    source:
+      address: "0x7d04aedc19aaeed47ccd1f27834d4e831861c838"
+      abi: TransitOld
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - CrossSwap
+        - OriginSwap
+        - OwnershipTransferPrepared
+        - OwnershipTransferred
+        - Swap
+        - SwapChannel
+      abis:
+        - name: TransitOld
+          file: ./abis/TransitOld.json
+      eventHandlers:
+        - event: CrossSwap(indexed address,indexed address,indexed address,uint256,uint256,uint256)
+          handler: handleCrossSwap
+        - event: OriginSwap(indexed address,indexed address,indexed address,uint256,uint256,uint256)
+          handler: handleOriginSwap
+        - event: OwnershipTransferPrepared(indexed address,indexed address)
+          handler: handleOwnershipTransferPrepared
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleSwap
+        - event: SwapChannel(indexed address,indexed address,indexed address,string,uint256,uint256,uint256)
+          handler: handleSwapChannel
+      file: ./src/transit-old.ts
