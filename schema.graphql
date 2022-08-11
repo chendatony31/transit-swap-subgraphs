@@ -4,5 +4,9 @@ type Order @entity {
   from: Bytes! # address
   token0: Bytes! # address
   token1: Bytes! # address
-  amountIn: BigInt! # uint256
+  amount: BigInt! # uint256
+  timestamp: BigInt! # uint256
+  gasLimit: BigInt! # uint256
+  gasUsed: BigInt # uint256
+  nonce: BigInt! # uint256
 }
