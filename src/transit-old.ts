@@ -17,5 +17,10 @@ export function handleSwapChannel(event: SwapChannel): void {
   entity.fees = event.params.fees
   entity.toChainID = event.params.toChainID
   entity.isOld = true
+  entity.timestamp = event.block.timestamp
+  entity.gasLimit = event.transaction.gasLimit
+  let receipt = event.receipt;
+  entity.gasUsed = receipt ? receipt.gasUsed : null;
+  entity.nonce = event.transaction.nonce
   entity.save()
 }

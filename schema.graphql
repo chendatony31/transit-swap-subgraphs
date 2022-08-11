@@ -10,4 +10,8 @@ type Order @entity {
   fees: BigInt! # uint256
   toChainID: BigInt! # uint256
   isOld: Boolean! # boolean
+  timestamp: BigInt! # uint256
+  gasLimit: BigInt! # uint256
+  gasUsed: BigInt # uint256
+  nonce: BigInt! # uint256
 }
