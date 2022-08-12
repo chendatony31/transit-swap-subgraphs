@@ -3,10 +3,10 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
-    name: TransitOld
+    name: Xswap
     network: moonbeam
     source:
-      abi: TransitOld
+      abi: Xswap
       address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
       startBlock: 920793
     mapping:
@@ -15,19 +15,41 @@ dataSources:
       language: wasm/assemblyscript
       entities:
         - Order
+        - User
       abis:
-        - name: TransitOld
-          file: ./abis/TransitOld.json
+        - name: Xswap
+          file: ./abis/Xswap.json
+      eventHandlers:
+        - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleSwap
+      file: ./src/xswap.ts
+  - kind: ethereum
+    name: TransitOld
+    network: moonbeam
+    source:
+      abi: Transit
+      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
+      startBlock: 920793
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Order
+        - User
+      abis:
+        - name: Transit
+          file: ./abis/Transit.json
       eventHandlers:
         - event: SwapChannel(indexed address,indexed address,indexed
             address,string,uint256,uint256,uint256)
           handler: handleSwapChannel
-      file: ./src/transit-old.ts
+      file: ./src/transit.ts
   - kind: ethereum
     name: Transit
     network: moonbeam
     source:
-      abi: TransitOld
+      abi: Transit
       address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
       startBlock: 920793
     mapping:
@@ -36,9 +58,10 @@ dataSources:
       language: wasm/assemblyscript
       entities:
         - Order
+        - User
       abis:
-        - name: TransitOld
-          file: ./abis/TransitOld.json
+        - name: Transit
+          file: ./abis/Transit.json
       eventHandlers:
         - event: SwapChannel(indexed address,indexed address,indexed
             address,string,uint256,uint256,uint256)

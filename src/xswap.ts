@@ -1,10 +1,10 @@
 import {
-    SwapChannel
-} from "../generated/Transit/Transit"
+    Swap
+} from "../generated/Xswap/Xswap"
 import { Order, User } from "../generated/schema"
 import { BigInt } from "@graphprotocol/graph-ts"
 
-export function handleSwapChannel(event: SwapChannel): void {
+export function handleSwap(event: Swap): void {
     let entity = new Order(
         event.transaction.hash.toHex() + "-" + event.logIndex.toString()
     )
@@ -13,9 +13,7 @@ export function handleSwapChannel(event: SwapChannel): void {
     entity.to = event.transaction.to
     entity.token0 = event.params.token0
     entity.token1 = event.params.token1
-    entity.channel = event.params.channel
-    entity.amount = event.params.amount
-    entity.toChainID = event.params.toChainID
+    entity.amount = event.params.amountIn
     entity.timestamp = event.block.timestamp
     entity.gasLimit = event.transaction.gasLimit
     let receipt = event.receipt;
@@ -32,7 +30,6 @@ export function handleSwapChannel(event: SwapChannel): void {
     else {
         address.count += 1
     }
-
 
     address.save()
 }

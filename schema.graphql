@@ -2,16 +2,19 @@ type Order @entity {
   id: ID!
   blockNumber: BigInt!
   from: Bytes! # address
-  trader: Bytes! # address
+  to: Bytes # address
   token0: Bytes! # address
   token1: Bytes! # address
-  channel: String! # string
+  channel: String # string
   amount: BigInt! # uint256
-  fees: BigInt! # uint256
-  toChainID: BigInt! # uint256
-  isOld: Boolean! # boolean
+  toChainID: BigInt # uint256
   timestamp: BigInt! # uint256
   gasLimit: BigInt! # uint256
   gasUsed: BigInt # uint256
   nonce: BigInt! # uint256
+}
+
+type User @entity {
+  id: ID!
+  count: Int! 
 }

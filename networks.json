@@ -1,5 +1,9 @@
 {
   "bsc": {
+    "Xswap": {
+      "address": "0xb01a9a7ef5779fa8680898827cc2b1aed638ee2d",
+      "startBlock": 9339737
+    },
     "TransitOld": {
       "address": "0x8785bb8deae13783b24d7afe250d42ea7d7e9d72",
       "startBlock": 11986204
@@ -10,6 +14,10 @@
     }
   },
   "fantom": {
+    "Xswap": {
+      "address": "0xB01A9a7EF5779fa8680898827Cc2B1AEd638eE2D",
+      "startBlock": 12565878
+    },
     "TransitOld": {
       "address": "0x7d04aedc19aaeed47ccd1f27834d4e831861c838",
       "startBlock": 19743723
@@ -20,6 +28,10 @@
     }
   },
   "matic": {
+    "Xswap": {
+      "address": "0xb01a9a7ef5779fa8680898827cc2b1aed638ee2d",
+      "startBlock": 17094264
+    },
     "TransitOld": {
       "address": "0x1f2e6cf79eb59dacb536bf68084c03483c4ec5dd",
       "startBlock": 20479845
@@ -30,6 +42,10 @@
     }
   },
   "mainnet": {
+    "Xswap": {
+      "address": "0xB01A9a7EF5779fa8680898827Cc2B1AEd638eE2D",
+      "startBlock": 12867422
+    },
     "TransitOld": {
       "address": "0xc8d7899f22bc4995c8176e3f2a5ba3f5e87d95e5",
       "startBlock": 13847864
@@ -40,6 +56,10 @@
     }
   },
   "optimism": {
+    "Xswap": {
+      "address": "0xeb2202B5646c237e93057bE912a3Cc4f4FDa290e",
+      "startBlock": 9897514
+    },
     "TransitOld": {
       "address": "0xeb2202B5646c237e93057bE912a3Cc4f4FDa290e",
       "startBlock": 9897514
@@ -50,6 +70,10 @@
     }
   },
   "avalanche": {
+    "Xswap": {
+      "address": "0x684d2eb723854dfa6fc68381dae184db3e9420e2",
+      "startBlock": 6714805
+    },
     "TransitOld": {
       "address": "0x684d2eb723854dfa6fc68381dae184db3e9420e2",
       "startBlock": 6714805
@@ -60,6 +84,10 @@
     }
   },
   "moonbeam": {
+    "Xswap": {
+      "address": "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2",
+      "startBlock": 920793
+    },
     "TransitOld": {
       "address": "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2",
       "startBlock": 920793
@@ -70,6 +98,10 @@
     }
   },
   "arbitrum-one": {
+    "Xswap": {
+      "address": "0x80593a336e3dba6ae7d6195bf99da86ed50135d9",
+      "startBlock": 253911
+    },
     "TransitOld": {
       "address": "0x80593a336e3dba6ae7d6195bf99da86ed50135d9",
       "startBlock": 253911
