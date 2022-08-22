@@ -47,7 +47,7 @@
       "startBlock": 12867422
     },
     "TransitOld": {
-      "address": "0xc8d7899f22bc4995c8176e3f2a5ba3f5e87d95e5",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 13847864
     },
     "Transit": {
@@ -57,11 +57,11 @@
   },
   "optimism": {
     "Xswap": {
-      "address": "0xeb2202B5646c237e93057bE912a3Cc4f4FDa290e",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 9897514
     },
     "TransitOld": {
-      "address": "0xeb2202B5646c237e93057bE912a3Cc4f4FDa290e",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 9897514
     },
     "Transit": {
@@ -71,7 +71,7 @@
   },
   "avalanche": {
     "Xswap": {
-      "address": "0x684d2eb723854dfa6fc68381dae184db3e9420e2",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 6714805
     },
     "TransitOld": {
@@ -85,11 +85,11 @@
   },
   "moonbeam": {
     "Xswap": {
-      "address": "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 920793
     },
     "TransitOld": {
-      "address": "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 920793
     },
     "Transit": {
@@ -99,11 +99,11 @@
   },
   "arbitrum-one": {
     "Xswap": {
-      "address": "0x80593a336e3dba6ae7d6195bf99da86ed50135d9",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 253911
     },
     "TransitOld": {
-      "address": "0x80593a336e3dba6ae7d6195bf99da86ed50135d9",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 253911
     },
     "Transit": {

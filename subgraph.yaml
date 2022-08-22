@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: Xswap
-    network: moonbeam
+    network: mainnet
     source:
       abi: Xswap
-      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
-      startBlock: 920793
+      address: "0xB01A9a7EF5779fa8680898827Cc2B1AEd638eE2D"
+      startBlock: 12867422
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -25,11 +25,11 @@ dataSources:
       file: ./src/xswap.ts
   - kind: ethereum
     name: TransitOld
-    network: moonbeam
+    network: mainnet
     source:
       abi: Transit
-      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
-      startBlock: 920793
+      address: "0x0000000000000000000000000000000000000000"
+      startBlock: 13847864
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -47,11 +47,11 @@ dataSources:
       file: ./src/transit.ts
   - kind: ethereum
     name: Transit
-    network: moonbeam
+    network: mainnet
     source:
       abi: Transit
-      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
-      startBlock: 920793
+      address: "0xc8d7899f22bc4995c8176e3f2a5ba3f5e87d95e5"
+      startBlock: 13847864
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
