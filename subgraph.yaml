@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: Xswap
-    network: mainnet
+    network: matic
     source:
       abi: Xswap
-      address: "0xB01A9a7EF5779fa8680898827Cc2B1AEd638eE2D"
-      startBlock: 12867422
+      address: "0xb01a9a7ef5779fa8680898827cc2b1aed638ee2d"
+      startBlock: 17094264
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -25,11 +25,11 @@ dataSources:
       file: ./src/xswap.ts
   - kind: ethereum
     name: TransitOld
-    network: mainnet
+    network: matic
     source:
       abi: Transit
-      address: "0x0000000000000000000000000000000000000000"
-      startBlock: 13847864
+      address: "0x1f2e6cf79eb59dacb536bf68084c03483c4ec5dd"
+      startBlock: 20479845
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -44,14 +44,19 @@ dataSources:
         - event: SwapChannel(indexed address,indexed address,indexed
             address,string,uint256,uint256,uint256)
           handler: handleSwapChannel
+        - event: OriginSwap(indexed address,indexed address,indexed
+            address,uint256,uint256,uint256)
+          handler: handleOriginSwap
+        - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleSwap
       file: ./src/transit.ts
   - kind: ethereum
     name: Transit
-    network: mainnet
+    network: matic
     source:
       abi: Transit
-      address: "0xc8d7899f22bc4995c8176e3f2a5ba3f5e87d95e5"
-      startBlock: 13847864
+      address: "0x8b48715c5d6d1645663a4c460ea85ce846b8580e"
+      startBlock: 21783467
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -66,4 +71,9 @@ dataSources:
         - event: SwapChannel(indexed address,indexed address,indexed
             address,string,uint256,uint256,uint256)
           handler: handleSwapChannel
+        - event: OriginSwap(indexed address,indexed address,indexed
+            address,uint256,uint256,uint256)
+          handler: handleOriginSwap
+        - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
+          handler: handleSwap
       file: ./src/transit.ts

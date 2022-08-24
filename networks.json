@@ -16,15 +16,15 @@
   "fantom": {
     "Xswap": {
       "address": "0xB01A9a7EF5779fa8680898827Cc2B1AEd638eE2D",
-      "startBlock": 12565878
+      "startBlock": 12799095
     },
     "TransitOld": {
       "address": "0x7d04aedc19aaeed47ccd1f27834d4e831861c838",
-      "startBlock": 19743723
+      "startBlock": 20013515
     },
     "Transit": {
       "address": "0x01C892c7b9fb9B1ACd3584be12EFFf91278d5230",
-      "startBlock": 23086457
+      "startBlock": 23102978
     }
   },
   "matic": {
@@ -99,7 +99,7 @@
   },
   "arbitrum-one": {
     "Xswap": {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "0x80593a336e3dba6ae7d6195bf99da86ed50135d9",
       "startBlock": 253911
     },
     "TransitOld": {
@@ -107,7 +107,7 @@
       "startBlock": 253911
     },
     "Transit": {
-      "address": "0x80593a336e3dba6ae7d6195bf99da86ed50135d9",
+      "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 253911
     }
   }

@@ -10,14 +10,14 @@ export function handleSwap(event: Swap): void {
     )
     entity.blockNumber = event.block.number
     entity.from = event.transaction.from
+    entity.hash = event.transaction.hash
     entity.to = event.transaction.to
     entity.token0 = event.params.token0
     entity.token1 = event.params.token1
-    entity.amount = event.params.amountIn
+    entity.amountIn = event.params.amountIn
+    entity.amountOut = event.params.amountOut
     entity.timestamp = event.block.timestamp
     entity.gasLimit = event.transaction.gasLimit
-    let receipt = event.receipt;
-    entity.gasUsed = receipt ? receipt.gasUsed : null;
     entity.nonce = event.transaction.nonce
     entity.save()
 

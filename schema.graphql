@@ -1,16 +1,17 @@
 type Order @entity {
   id: ID!
   blockNumber: BigInt!
+  hash: Bytes!
   from: Bytes! # address
   to: Bytes # address
   token0: Bytes! # address
   token1: Bytes! # address
   channel: String # string
-  amount: BigInt! # uint256
+  amountIn: BigInt! # uint256
+  amountOut: BigInt # uint256
   toChainID: BigInt # uint256
   timestamp: BigInt! # uint256
   gasLimit: BigInt! # uint256
-  gasUsed: BigInt # uint256
   nonce: BigInt! # uint256
 }
 
