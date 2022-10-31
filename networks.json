@@ -11,6 +11,10 @@
     "Transit": {
       "address": "0x638f32fe09baec1fdc54f962e3e8e5f2b286aa70",
       "startBlock": 12945738
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 22357651
     }
   },
   "fantom": {
@@ -25,6 +29,10 @@
     "Transit": {
       "address": "0x01C892c7b9fb9B1ACd3584be12EFFf91278d5230",
       "startBlock": 23102978
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 49672411
     }
   },
   "matic": {
@@ -39,6 +47,10 @@
     "Transit": {
       "address": "0x8b48715c5d6d1645663a4c460ea85ce846b8580e",
       "startBlock": 21783467
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 34610370
     }
   },
   "mainnet": {
@@ -53,6 +65,10 @@
     "Transit": {
       "address": "0xc8d7899f22bc4995c8176e3f2a5ba3f5e87d95e5",
       "startBlock": 13847864
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 15795320
     }
   },
   "optimism": {
@@ -67,6 +83,10 @@
     "Transit": {
       "address": "0xeb2202B5646c237e93057bE912a3Cc4f4FDa290e",
       "startBlock": 9897514
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 30562424
     }
   },
   "avalanche": {
@@ -81,6 +101,10 @@
     "Transit": {
       "address": "0x57a8AA38d670f025385C5EB2eed47B96a1dBdf94",
       "startBlock": 7408641
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 21340825
     }
   },
   "moonbeam": {
@@ -95,6 +119,10 @@
     "Transit": {
       "address": "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2",
       "startBlock": 920793
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 2125476
     }
   },
   "arbitrum-one": {
@@ -109,6 +137,10 @@
     "Transit": {
       "address": "0x0000000000000000000000000000000000000000",
       "startBlock": 253911
+    },
+    "TransitNew": {
+      "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
+      "startBlock": 31488957
     }
   }
 }

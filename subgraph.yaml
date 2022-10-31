@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: Xswap
-    network: matic
+    network: bsc
     source:
       abi: Xswap
       address: "0xb01a9a7ef5779fa8680898827cc2b1aed638ee2d"
-      startBlock: 17094264
+      startBlock: 9339737
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -25,11 +25,11 @@ dataSources:
       file: ./src/xswap.ts
   - kind: ethereum
     name: TransitOld
-    network: matic
+    network: bsc
     source:
       abi: Transit
-      address: "0x1f2e6cf79eb59dacb536bf68084c03483c4ec5dd"
-      startBlock: 20479845
+      address: "0x8785bb8deae13783b24d7afe250d42ea7d7e9d72"
+      startBlock: 11986204
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -52,11 +52,11 @@ dataSources:
       file: ./src/transit.ts
   - kind: ethereum
     name: Transit
-    network: matic
+    network: bsc
     source:
       abi: Transit
-      address: "0x8b48715c5d6d1645663a4c460ea85ce846b8580e"
-      startBlock: 21783467
+      address: "0x638f32fe09baec1fdc54f962e3e8e5f2b286aa70"
+      startBlock: 12945738
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -77,3 +77,25 @@ dataSources:
         - event: Swap(indexed address,indexed address,indexed address,uint256,uint256)
           handler: handleSwap
       file: ./src/transit.ts
+  - kind: ethereum
+    name: TransitNew
+    network: bsc
+    source:
+      abi: TransitNew
+      address: "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08"
+      startBlock: 22357651
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Order
+        - User
+      abis:
+        - name: TransitNew
+          file: ./abis/TransitNew.json
+      eventHandlers:
+        - event: TransitSwapped(indexed address,indexed address,indexed
+            address,address,bool,uint256,uint256,uint256,uint256,uint256,string,uint256)
+          handler: handleSwap
+      file: ./src/transit_new.ts
