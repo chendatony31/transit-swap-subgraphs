@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: Xswap
-    network: bsc
+    network: moonbeam
     source:
       abi: Xswap
-      address: "0xb01a9a7ef5779fa8680898827cc2b1aed638ee2d"
-      startBlock: 9339737
+      address: "0x0000000000000000000000000000000000000000"
+      startBlock: 920793
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -25,11 +25,11 @@ dataSources:
       file: ./src/xswap.ts
   - kind: ethereum
     name: TransitOld
-    network: bsc
+    network: moonbeam
     source:
       abi: Transit
-      address: "0x8785bb8deae13783b24d7afe250d42ea7d7e9d72"
-      startBlock: 11986204
+      address: "0x0000000000000000000000000000000000000000"
+      startBlock: 920793
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -52,11 +52,11 @@ dataSources:
       file: ./src/transit.ts
   - kind: ethereum
     name: Transit
-    network: bsc
+    network: moonbeam
     source:
       abi: Transit
-      address: "0x638f32fe09baec1fdc54f962e3e8e5f2b286aa70"
-      startBlock: 12945738
+      address: "0x684D2EB723854dfa6FC68381Dae184dB3E9420e2"
+      startBlock: 920793
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -79,11 +79,33 @@ dataSources:
       file: ./src/transit.ts
   - kind: ethereum
     name: TransitNew
-    network: bsc
+    network: moonbeam
     source:
       abi: TransitNew
       address: "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08"
-      startBlock: 22357651
+      startBlock: 2125476
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Order
+        - User
+      abis:
+        - name: TransitNew
+          file: ./abis/TransitNew.json
+      eventHandlers:
+        - event: TransitSwapped(indexed address,indexed address,indexed
+            address,address,bool,uint256,uint256,uint256,uint256,uint256,string,uint256)
+          handler: handleSwap
+      file: ./src/transit_new.ts
+  - kind: ethereum
+    name: TransitNew2
+    network: moonbeam
+    source:
+      abi: TransitNew
+      address: "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39"
+      startBlock: 2210632
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6

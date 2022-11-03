@@ -15,6 +15,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 22357651
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 22705572
     }
   },
   "fantom": {
@@ -33,6 +37,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 49672411
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 50386349
     }
   },
   "matic": {
@@ -51,6 +59,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 34610370
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 35105145
     }
   },
   "mainnet": {
@@ -69,6 +81,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 15795320
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 15881667
     }
   },
   "optimism": {
@@ -87,6 +103,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 30562424
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 33641467
     }
   },
   "avalanche": {
@@ -105,6 +125,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 21340825
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 21854644
     }
   },
   "moonbeam": {
@@ -123,6 +147,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 2125476
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 2210632
     }
   },
   "arbitrum-one": {
@@ -141,6 +169,10 @@
     "TransitNew": {
       "address": "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08",
       "startBlock": 31488957
+    },
+    "TransitNew2": {
+      "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
+      "startBlock": 34687528
     }
   }
 }

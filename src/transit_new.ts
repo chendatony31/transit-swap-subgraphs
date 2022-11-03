@@ -15,6 +15,7 @@ export function handleSwap(event: TransitSwapped): void {
     newEntity.token1 = event.params.dstToken
     newEntity.channel = event.params.channel
     newEntity.amountIn = event.params.amount
+    newEntity.amountOut = event.params.returnAmount
     newEntity.toChainID = event.params.toChainID
     newEntity.timestamp = event.block.timestamp
     newEntity.gasLimit = event.transaction.gasLimit
