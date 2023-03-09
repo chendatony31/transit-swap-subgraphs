@@ -19,6 +19,7 @@ export function handleSwapChannel(event: SwapChannel): void {
         newEntity.hash = event.transaction.hash
         newEntity.from = event.transaction.from
         newEntity.to = event.transaction.to
+        newEntity.trader = event.params.trader
         newEntity.token0 = event.params.token0
         newEntity.token1 = event.params.token1
         newEntity.channel = event.params.channel

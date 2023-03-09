@@ -11,6 +11,8 @@ export function handleSwap(event: TransitSwapped): void {
     newEntity.hash = event.transaction.hash
     newEntity.from = event.transaction.from
     newEntity.to = event.transaction.to
+    newEntity.trader = event.params.trader
+    newEntity.receiver = event.params.dstReceiver
     newEntity.token0 = event.params.srcToken
     newEntity.token1 = event.params.dstToken
     newEntity.channel = event.params.channel

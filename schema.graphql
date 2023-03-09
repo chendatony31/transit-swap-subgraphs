@@ -3,6 +3,8 @@ type Order @entity {
   blockNumber: BigInt!
   hash: Bytes!
   from: Bytes! # address
+  trader: Bytes # address
+  receiver: Bytes # address
   to: Bytes # address
   token0: Bytes! # address
   token1: Bytes! # address
