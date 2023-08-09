@@ -63,6 +63,10 @@
     "TransitNew2": {
       "address": "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39",
       "startBlock": 35105145
+    },
+    "TransitV5": {
+      "address": "0x00000047bb99ea4d791bb749d970de71ee0b1a34",
+      "startBlock": 45492902
     }
   },
   "mainnet": {
