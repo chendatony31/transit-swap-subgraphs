@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: Xswap
-    network: matic
+    network: mainnet
     source:
       abi: Xswap
-      address: "0xb01a9a7ef5779fa8680898827cc2b1aed638ee2d"
-      startBlock: 17094264
+      address: "0xB01A9a7EF5779fa8680898827Cc2B1AEd638eE2D"
+      startBlock: 12867422
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -25,11 +25,11 @@ dataSources:
       file: ./src/xswap.ts
   - kind: ethereum
     name: TransitOld
-    network: matic
+    network: mainnet
     source:
       abi: Transit
-      address: "0x1f2e6cf79eb59dacb536bf68084c03483c4ec5dd"
-      startBlock: 20479845
+      address: "0x0000000000000000000000000000000000000000"
+      startBlock: 13847864
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -52,11 +52,11 @@ dataSources:
       file: ./src/transit.ts
   - kind: ethereum
     name: Transit
-    network: matic
+    network: mainnet
     source:
       abi: Transit
-      address: "0x8b48715c5d6d1645663a4c460ea85ce846b8580e"
-      startBlock: 21783467
+      address: "0xc8d7899f22bc4995c8176e3f2a5ba3f5e87d95e5"
+      startBlock: 13847864
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -79,11 +79,11 @@ dataSources:
       file: ./src/transit.ts
   - kind: ethereum
     name: TransitNew
-    network: matic
+    network: mainnet
     source:
       abi: TransitNew
       address: "0x9865eebdd1ce65f45b6247aeed2fa2252eca7a08"
-      startBlock: 34610370
+      startBlock: 15795320
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -101,11 +101,11 @@ dataSources:
       file: ./src/transit_new.ts
   - kind: ethereum
     name: TransitNew2
-    network: matic
+    network: mainnet
     source:
       abi: TransitNew
       address: "0xb45a2dda996c32e93b8c47098e90ed0e7ab18e39"
-      startBlock: 35105145
+      startBlock: 15881667
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -123,11 +123,11 @@ dataSources:
       file: ./src/transit_new.ts
   - kind: ethereum
     name: TransitV5
-    network: matic
+    network: mainnet
     source:
       abi: TransitV5
       address: "0x00000047bb99ea4d791bb749d970de71ee0b1a34"
-      startBlock: 45492902
+      startBlock: 17911224
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
